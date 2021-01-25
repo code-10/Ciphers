@@ -23,7 +23,7 @@ string encrypt(string plaintext,string key)
 string decrypt(string ciphertext,string key)
 {
 
-    string plain;
+    string plain="";
 
     while(ciphertext.length()>key.length())
         key+=key;
