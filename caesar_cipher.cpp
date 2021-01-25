@@ -42,7 +42,7 @@ int main()
     srand((unsigned) time(0));
     string s;
     cout<<"Enter a string to Encrypt\n";
-    cin>>s;
+    getline(cin,s);
     int key = (rand() % (5 - 2 + 1)) + 2;
     cout<<"\nKey used is : "<<key<<endl;
     string cipher = encrypt(s,key);
